@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    
+}
+
+.galery{
+    height: 100vh;
+    width: 100%;
+    background-image: url('/asset/img/bacgroun-galery.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.title-galery p{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 13px;
+}
+
+.certs-swiper{
+    overflow-x:hidden;
+}
+
+
+
+.swiper-slide {
+  height: 120px;
+  width: auto;
+}
+
+.swiper-slide img{
+    margin: 0PX;
+}
