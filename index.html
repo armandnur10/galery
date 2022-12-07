@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Galery</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/asset/css/style.css">
@@ -25,7 +25,7 @@
     <div class="galery d-flex flex-column">
         <p class="text-light my-4 title">Galery</p>
         <div class="content">
-            <div class="swiper">
+            <div class="swiper-1">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="/asset/img/swiper-1/1.png" alt="">
@@ -40,7 +40,7 @@
                     <div class="swiper-slide"><img src="/asset/img/swiper-1/8.png" alt=""></div>
                 </div>
             </div>
-            <div class="swiper">
+            <div class="swiper-2">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="/asset/img/swiper-2/1.png.png" alt=""></div>
                     <div class="swiper-slide"><img src="/asset/img/swiper-2/2.png.png" alt=""></div>
@@ -53,7 +53,7 @@
                     <div class="swiper-slide"><img src="/asset/img/swiper-2/9.png.png" alt=""></div>
                 </div>
             </div>
-            <div class="swiper">
+            <div class="swiper-3">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="/asset/img/swiper-3/1.png" alt=""></div>
                     <div class="swiper-slide"><img src="/asset/img/swiper-3/2.png" alt=""></div>
@@ -68,12 +68,34 @@
     <script>
 
 
-        var swiper = new Swiper('.swiper', {
+        var swiper = new Swiper('.swiper-1', {
             slidesPerView: 11,
             centeredSlides: true,
             spaceBetween: 10,
-            grabCursor: true,
             speed: 4000,
+            allowTouchMove: false,
+            loop: true,
+            autoplay: {
+                delay: 10,
+            },
+        });
+
+        var swiper = new Swiper('.swiper-2', {
+            slidesPerView: 11,
+            centeredSlides: true,
+            spaceBetween: 10,
+            speed: 5000,
+            loop: true,
+            autoplay: {
+                delay: 5,
+            },
+        });
+
+        var swiper = new Swiper('.swiper-3', {
+            slidesPerView: 11,
+            centeredSlides: true,
+            spaceBetween: 10,
+            speed: 6000,
             loop: true,
             autoplay: {
                 delay: 0,
